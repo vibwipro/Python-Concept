@@ -9,4 +9,5 @@ Output values should be = [2, 3, 4, 5, 1, 7, 6]
 Python Code to achieve it = 
 
 tmp = [value for value in tmp if value]
+
 print ([sorted(tmp, key=lambda x: (x is None, x), reverse=False).index(x) + 1 for x in tmp])
